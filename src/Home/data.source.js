@@ -32,6 +32,7 @@ import Introscan from "../../src/assets/Energy/Introscan.svg";
 import World from "../../src/assets/Energy/World.svg";
 import Customers from "../../src/assets/Energy/Customers.svg";
 
+import Energy from "../../src/assets/Energy/energy.png";
 
 export const Nav00DataSource = {
   wrapper: { className: "header0 home-page-wrapper liv7l0vtpdh-editor_css" },
@@ -148,7 +149,8 @@ export const Nav00DataSource = {
   },
   mobileMenu: { className: "header0-mobile-menu" },
 };
-export const Banner20DataSource = { // Банер
+export const Banner20DataSource = {
+  // Банер
   wrapper: { className: "banner2" },
   BannerAnim: {
     children: [
@@ -157,7 +159,13 @@ export const Banner20DataSource = { // Банер
         BannerElement: { className: "banner-user-elem" },
         page: { className: "home-page banner2-page" },
         textWrapper: { className: "banner2-text-wrapper" },
-        bg: { className: "bg bg0" },
+        bg: {
+          className: "bg bg0",
+          style: {
+            background: `url("${Energy}")`,
+            backgroundSize: "cover",
+          },
+        },
         title: {
           className: "banner2-title livaxbpck6h-editor_css",
           children: (
@@ -183,7 +191,8 @@ export const Banner20DataSource = { // Банер
     ],
   },
 };
-export const Content00DataSource = { // Энергия
+export const Content00DataSource = {
+  // Энергия
   wrapper: { className: "home-page-wrapper content0-wrapper" },
   page: { className: "home-page content0 liv9c0uba8b-editor_css" },
   OverPack: { playScale: 0.3, className: "" },
@@ -217,7 +226,7 @@ export const Content00DataSource = { // Энергия
             {
               name: "image",
               className: "content0-block-icon",
-              children: <img src={Employees} alt="img"/>,
+              children: <img src={Employees} alt="img" />,
             },
             {
               name: "title",
@@ -254,7 +263,7 @@ export const Content00DataSource = { // Энергия
             {
               name: "image",
               className: "content0-block-icon",
-              children: <img src={Foundation} alt="img"/>,
+              children: <img src={Foundation} alt="img" />,
             },
             {
               name: "title",
@@ -291,7 +300,7 @@ export const Content00DataSource = { // Энергия
             {
               name: "image",
               className: "content0-block-icon",
-              children: <img src={World} alt="img"/>,
+              children: <img src={World} alt="img" />,
             },
             {
               name: "title",
@@ -329,7 +338,7 @@ export const Content00DataSource = { // Энергия
             {
               name: "image",
               className: "content0-block-icon",
-              children: <img src={Introscan} alt="img"/>,
+              children: <img src={Introscan} alt="img" />,
             },
             {
               name: "title",
@@ -365,7 +374,7 @@ export const Content00DataSource = { // Энергия
             {
               name: "image",
               className: "content0-block-icon",
-              children: <img src={Customers} alt="img"/>,
+              children: <img src={Customers} alt="img" />,
             },
             {
               name: "title",
@@ -429,7 +438,8 @@ export const Content00DataSource = { // Энергия
     ],
   },
 };
-export const Content50DataSource = { // Скрыта
+export const Content50DataSource = {
+  // Скрыта
   wrapper: { className: "home-page-wrapper content5-wrapper" },
   page: { className: "home-page content5" },
   OverPack: { playScale: 0.3, className: "" },
@@ -588,7 +598,8 @@ export const Content50DataSource = { // Скрыта
     ],
   },
 };
-export const Content120DataSource = { // Заказчики
+export const Content120DataSource = {
+  // Заказчики
   wrapper: { className: "home-page-wrapper content12-wrapper" },
   page: { className: "home-page content12" },
   OverPack: { playScale: 0.3, className: "" },
@@ -829,7 +840,8 @@ export const Content120DataSource = { // Заказчики
     ],
   },
 };
-export const Content40DataSource = { // Новые
+export const Content40DataSource = {
+  // Новые
   wrapper: { className: "home-page-wrapper content4-wrapper" },
   page: { className: "home-page content4" },
   OverPack: { playScale: 0.3, className: "" },
@@ -908,7 +920,8 @@ export const Content40DataSource = { // Новые
     },
   },
 };
-export const Feature10DataSource = { // Диплом
+export const Feature10DataSource = {
+  // Диплом
   wrapper: { className: "home-page-wrapper content1-wrapper" },
   OverPack: { className: "home-page content1", playScale: 0.3 },
   imgWrapper: { className: "content1-img", md: 10, xs: 24 },
@@ -939,7 +952,8 @@ export const Feature10DataSource = { // Диплом
     ),
   },
 };
-export const Teams10DataSource = { // Технологии
+export const Teams10DataSource = {
+  // Технологии
   wrapper: { className: "home-page-wrapper teams1-wrapper" },
   page: { className: "home-page teams1" },
   OverPack: { playScale: 0.3, className: "" },
@@ -1043,7 +1057,8 @@ export const Teams10DataSource = { // Технологии
     ],
   },
 };
-export const Content41DataSource = { // Наше оборудование
+export const Content41DataSource = {
+  // Наше оборудование
   wrapper: { className: "home-page-wrapper content4-wrapper" },
   page: { className: "home-page content4" },
   OverPack: { playScale: 0.3, className: "" },
@@ -1075,7 +1090,8 @@ export const Content41DataSource = { // Наше оборудование
     },
   },
 };
-export const Feature60DataSource = { // Экология
+export const Feature60DataSource = {
+  // Экология
   wrapper: { className: "home-page-wrapper feature6-wrapper" },
   OverPack: { className: "home-page feature6", playScale: 0.3 },
   Carousel: {
@@ -1114,7 +1130,7 @@ export const Feature60DataSource = { // Экология
               className: "feature6-number",
               unit: {
                 className: "feature6-number",
-                children: '+',
+                children: "+",
               },
               toText: true,
               children: "650",
@@ -1142,7 +1158,7 @@ export const Feature60DataSource = { // Экология
               className: "feature6-number",
               unit: {
                 className: "feature6-number",
-                children: '+',
+                children: "+",
               },
               toText: true,
               children: "3000",
@@ -1168,7 +1184,7 @@ export const Feature60DataSource = { // Экология
               className: "feature6-number",
               unit: {
                 className: "feature6-number",
-                children: '+',
+                children: "+",
               },
               toText: true,
               children: "1750",
