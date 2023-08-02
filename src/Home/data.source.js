@@ -1,11 +1,12 @@
 import React from "react";
-import Diplom from "../../src/assets/New/DiplomS.png";
+import DiplomS from "../../src/assets/New/DiplomS.jpg";
+import DiplomM from "../../src/assets/New/DiplomM.jpg";
+import DiplomV from "../../src/assets/New/DiplomV.png";
 import Chemodan from "../../src/assets/Technology/Chemodan.jpeg";
-import Employee from "../../src/assets/Technology/Employee.jpeg";
+// import Employee from "../../src/assets/Technology/Employee.jpeg";
+import Cars from "../../src/assets/Technology/Cars.png";
 import Robot from "../../src/assets/Technology/Robot.jpeg";
-
 import Logo from "../../src/assets/logo-dark.svg";
-
 import Agp from "../../src/assets/Customers/agp.png";
 import Kirg from "../../src/assets/Customers/gaz-kirg.png";
 import Raspredelenie from "../../src/assets/Customers/gazoraspredelenie.png";
@@ -15,8 +16,8 @@ import Stavropol from "../../src/assets/Customers/gt-stavropol.png";
 import Uhta from "../../src/assets/Customers/gt-uhta.png";
 import Volgograd from "../../src/assets/Customers/gt-volgograd.png";
 import Yugorsk from "../../src/assets/Customers/gt-yugorsk.png";
-import Chaik from "../../src/assets/Customers/gt_chaik.png";
 import Piter from "../../src/assets/Customers/gt_piter.png";
+import Chaik from "../../src/assets/Customers/gt_chaik.png";
 import Lukoil from "../../src/assets/Customers/lukioil.png";
 import Stream from "../../src/assets/Customers/stream.png";
 import Hallibuton from "../../src/assets/Customers/hallibuton.png";
@@ -24,7 +25,7 @@ import Ttg from "../../src/assets/Customers/ttg.png";
 import Trans from "../../src/assets/Customers/trans.png";
 import NordStream from "../../src/assets/Customers/NordStream.png";
 import RosDor from "../../src/assets/Customers/RosDor.png";
-import Sape from "../../src/assets/Customers/SAPE.png";
+// import Sape from "../../src/assets/Customers/SAPE.png";
 
 import Employees from "../../src/assets/Energy/Employees.svg";
 import Foundation from "../../src/assets/Energy/Foundation.svg";
@@ -32,7 +33,8 @@ import Introscan from "../../src/assets/Energy/Introscan.svg";
 import World from "../../src/assets/Energy/World.svg";
 import Customers from "../../src/assets/Energy/Customers.svg";
 
-import Energy from "../../src/assets/Energy/energy.png";
+// import Energy from "../../src/assets/Energy/energy.png";
+import DigitalWorld from "../../src/assets/Energy/DigitalWorld.jpg";
 
 export const Nav00DataSource = {
   wrapper: { className: "header0 home-page-wrapper liv7l0vtpdh-editor_css" },
@@ -162,7 +164,7 @@ export const Banner20DataSource = {
         bg: {
           className: "bg bg0",
           style: {
-            background: `url("${Energy}")`,
+            background: `url("${DigitalWorld}")`,
             backgroundSize: "cover",
           },
         },
@@ -192,7 +194,7 @@ export const Banner20DataSource = {
   },
 };
 export const Content00DataSource = {
-  // Энергия
+  // ЭНЕРГИЯ
   wrapper: { className: "home-page-wrapper content0-wrapper" },
   page: { className: "home-page content0 liv9c0uba8b-editor_css" },
   OverPack: { playScale: 0.3, className: "" },
@@ -316,10 +318,10 @@ export const Content00DataSource = {
               children: (
                 <span>
                   <span>
-                    <p>ЭНТЭ-ИЖ (г. Ижевск),</p>
                     <p>
                       <span>ЭНТЭ-ЮГРА (г. Югорск)</span>
                     </p>
+                    <p>ЭНТЭ-ИЖ (г. Ижевск),</p>
                   </span>
                 </span>
               ),
@@ -330,7 +332,7 @@ export const Content00DataSource = {
       {
         name: "block~liv9dqjwt57",
         className: "content0-block",
-        md: 8,
+        md: 12,
         xs: 24,
         children: {
           className: "content0-block-item",
@@ -366,7 +368,7 @@ export const Content00DataSource = {
       {
         name: "block~liv9dujwmv",
         className: "content0-block",
-        md: 8,
+        md: 12,
         xs: 24,
         children: {
           className: "content0-block-item",
@@ -438,7 +440,193 @@ export const Content00DataSource = {
     ],
   },
 };
+export const Content01DataSource = {
+  // Диплом
+  wrapper: { className: "home-page-wrapper content0-wrapper" },
+  page: { className: "home-page content0 liv9c0uba8b-editor_css" },
+  OverPack: { playScale: 0.3, className: "" },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "title",
+        children: (
+          <span>
+            {/* <h2>
+              <b id="energy">ЭНЕРГИЯ</b>
+            </h2> */}
+          </span>
+        ),
+        className: "liv9bjlx2j-editor_css",
+      },
+    ],
+  },
+  childWrapper: {
+    className: "content0-block-wrapper",
+    children: [
+      {
+        name: "block0",
+        className: "content0-block",
+        md: 8,
+        xs: 24,
+        children: {
+          className: "content0-block-item",
+          children: [
+            {
+              name: "image",
+              className: "content0-block-icon",
+              children: (
+                <img
+                  src={DiplomS}
+                  alt="img"
+                  style={{ height: "200px", width: "120px" }}
+                />
+              ),
+            },
+            {
+              name: "title",
+              className: "content0-block-title",
+              children: <span>{/* <p>150+ СОТРУДНИКОВ</p> */}</span>,
+            },
+            {
+              name: "content",
+              children: (
+                <span>
+                  {/* <p>
+                    Коллектив ООО «ЭНТЭ» - сплоченная Команда
+                    высококвалифицированных специалистов из различных отраслей
+                    промышленности
+                  </p> */}
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        name: "block1",
+        className: "content0-block",
+        md: 8,
+        xs: 24,
+        children: {
+          className: "content0-block-item",
+          children: [
+            {
+              name: "image",
+              className: "content0-block-icon",
+              children: (
+                <img
+                  src={DiplomM}
+                  alt="img"
+                  style={{ height: "200px", width: "120px" }}
+                />
+              ),
+            },
+            {
+              name: "title",
+              className: "content0-block-title",
+              children: (
+                <span>
+                  {/* <span>
+                    <p>20+ ЛЕТ РАБОТЫ</p>
+                  </span> */}
+                </span>
+              ),
+            },
+            {
+              name: "content",
+              children: (
+                <span>
+                  {/* <p>
+                    Дата основания:&nbsp;<span>1 августа 2000 года</span>
+                  </p> */}
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        name: "block2",
+        className: "content0-block",
+        md: 8,
+        xs: 24,
+        children: {
+          className: "content0-block-item",
+          children: [
+            {
+              name: "image",
+              className: "content0-block-icon",
+              children: (
+                <img
+                  src={DiplomV}
+                  alt="img"
+                  style={{ height: "200px", width: "120px" }}
+                />
+              ),
+            },
+            {
+              name: "title",
+              className: "content0-block-title",
+              children: <span>{/* <p>2 ФИЛИАЛА</p> */}</span>,
+            },
+            {
+              name: "content",
+              children: (
+                <span>
+                  {/* <span>
+                    <p>
+                      <span>ЭНТЭ-ЮГРА (г. Югорск)</span>
+                    </p>
+                    <p>ЭНТЭ-ИЖ (г. Ижевск),</p>
+                  </span> */}
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        name: "block~liv9dqjwt57",
+        className: "content0-block",
+        md: "100%",
+        xs: 24,
+        children: {
+          className: "content0-block-item",
+          children: [
+            // {
+            //   name: "image",
+            //   className: "content0-block-icon",
+            //   // children: <img src={Introscan} alt="img" />,
+            // },
+            // {
+            //   name: "title",
+            //   className: "content0-block-title",
+            //   children: <span>{/* <p>ПАРТНЕРЫ</p> */}</span>,
+            // },
+            {
+              name: "content",
+              children: (
+                <span>
+                  <p style={{ fontSize: "25px" }}>
+                    Методология обеспечения требуемого уровня надежности
+                    трубопроводов с использованием роботизированных комплексов.
+                  </p>
+                  <p style={{ fontSize: "25px" }}>
+                    Работа удостоена Премии ПАО «Газпром» в области науки и
+                    техники 2021 г.
+                  </p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+    ],
+  },
+};
 export const Content50DataSource = {
+  //  --- ИСКЛЮЧЕНА
   // Скрыта
   wrapper: { className: "home-page-wrapper content5-wrapper" },
   page: { className: "home-page content5" },
@@ -599,7 +787,8 @@ export const Content50DataSource = {
   },
 };
 export const Content120DataSource = {
-  // Заказчики
+  // ЗАКАЗЧИКИ
+
   wrapper: { className: "home-page-wrapper content12-wrapper" },
   page: { className: "home-page content12" },
   OverPack: { playScale: 0.3, className: "" },
@@ -621,15 +810,27 @@ export const Content120DataSource = {
     className: "img-wrapper",
     children: [
       {
-        name: "block0",
+        name: "block01",
         className: "block",
         md: 4,
         xs: 8,
         children: {
           wrapper: { className: "block-content" },
           img: {
-            children: Agp,
+            children: Chaik,
             className: "livg0trhbuu-editor_css",
+          },
+        },
+      },
+      {
+        name: "block14",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Yugorsk,
           },
         },
       },
@@ -646,18 +847,6 @@ export const Content120DataSource = {
         },
       },
       {
-        name: "block2",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Lukoil,
-          },
-        },
-      },
-      {
         name: "block3",
         className: "block",
         md: 4,
@@ -666,54 +855,6 @@ export const Content120DataSource = {
           wrapper: { className: "block-content" },
           img: {
             children: Krasnodar,
-          },
-        },
-      },
-      {
-        name: "block4",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Ttg,
-          },
-        },
-      },
-      {
-        name: "block5",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Stream,
-          },
-        },
-      },
-      {
-        name: "block6",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Trans,
-          },
-        },
-      },
-      {
-        name: "block7",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Hallibuton,
           },
         },
       },
@@ -790,14 +931,75 @@ export const Content120DataSource = {
         },
       },
       {
-        name: "block14",
+        name: "block0",
         className: "block",
         md: 4,
         xs: 8,
         children: {
           wrapper: { className: "block-content" },
           img: {
-            children: Yugorsk,
+            children: Agp,
+            className: "livg0trhbuu-editor_css",
+          },
+        },
+      },
+      {
+        name: "block2",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Lukoil,
+          },
+        },
+      },
+      {
+        name: "block4",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Ttg,
+          },
+        },
+      },
+      {
+        name: "block5",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Stream,
+          },
+        },
+      },
+      {
+        name: "block6",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Trans,
+          },
+        },
+      },
+      {
+        name: "block7",
+        className: "block",
+        md: 4,
+        xs: 8,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children: Hallibuton,
           },
         },
       },
@@ -825,23 +1027,11 @@ export const Content120DataSource = {
           },
         },
       },
-      {
-        name: "block18",
-        className: "block",
-        md: 4,
-        xs: 8,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children: Sape,
-          },
-        },
-      },
     ],
   },
 };
 export const Content40DataSource = {
-  // Новые
+  // НОВЫЕ
   wrapper: { className: "home-page-wrapper content4-wrapper" },
   page: { className: "home-page content4" },
   OverPack: { playScale: 0.3, className: "" },
@@ -871,14 +1061,36 @@ export const Content40DataSource = {
         className: "",
       },
       {
-        name: "content",
+        name: "content~liv9vbnify",
+        className: "liv9vcdbva-editor_css",
+        children: (
+          <span>
+            <span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tass.ru/ekonomika/14088173"
+              >
+                Пермская компания создаст для "Газпрома"
+                роботов-диагностов&nbsp;
+                <span>труднодоступных газопроводов. ТАСС | 2022г.</span>
+              </a>
+            </span>
+          </span>
+        ),
+      },
+      {
+        name: "content~liv9uwoof2c",
         className: "title-content content4-title-content liv9u46wll-editor_css",
         children: (
           <span>
-            <a href="https://yandex.ru">
-              Внутриутробный контроль технологических трубопроводов
-              компрессорных станций ОАО «Газпром» с применением роботизированных
-              сканеров. Газовая промышленность.
+            <br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://smotrim.ru/video/2363215?ysclid=ljcnwtfgwa35911430"
+            >
+              Энергетика. Роботы Газпрома | 2021г.
             </a>
           </span>
         ),
@@ -888,24 +1100,97 @@ export const Content40DataSource = {
         className: "title-content content4-title-content liv9u46wll-editor_css",
         children: (
           <span>
-            <a href="https://yandex.ru">
-              Партнерство новаторов — эффективность в приоритете. Бизнесс России
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://storapi.ente-ltd.ru/cdn/videos/Article_2020.pdf"
+            >
+              Инновационные средства диагностики трубопроводов компрессорных
+              станций | Газовая промышленность | № 5 | 2020г.
             </a>
           </span>
         ),
       },
       {
-        name: "content~liv9vbnify",
-        className: "liv9vcdbva-editor_css",
+        name: "content~liv9uwoof2c",
+        className: "title-content content4-title-content liv9u46wll-editor_css",
         children: (
           <span>
-            <span>
-              <a href="https://yandex.ru">
-                Пермская компания создаст для "Газпрома"
-                роботов-диагностов&nbsp;
-                <span>труднодоступных газопроводов. ТАСС</span>
-              </a>
-            </span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://storapi.ente-ltd.ru/cdn/videos/Article_2019.pdf"
+            >
+              Как обеспечить надежность газотранспортной системы | НЕФТЬ, ГАЗ,
+              НЕФТЕХИМИЯ | ПРОМЫШЛЕННАЯ ЭКОЛОГИЯ И БЕЗОПАСНОСТЬ | 2019г.
+            </a>
+          </span>
+        ),
+      },
+      {
+        name: "content~liv9uwoof2c",
+        className: "title-content content4-title-content liv9u46wll-editor_css",
+        children: (
+          <span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://glavportal.com/materials/partnerstvo-novatorov-effektivnost-v-prioritete/"
+            >
+              Партнерство новаторов — эффективность в приоритете | Бизнесс
+              России | 2018г.
+            </a>
+          </span>
+        ),
+      },
+      {
+        name: "content~liv9uwoof2c",
+        className: "title-content content4-title-content liv9u46wll-editor_css",
+        children: (
+          <span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://storapi.ente-ltd.ru/cdn/videos/Article_2018.pdf"
+            >
+              Партнерство новаторов - эффективность в приоритете | Деловая
+              Россия: промышленность, транспорт, социальная жизнь | № 5–6 |
+              2018г.
+            </a>
+          </span>
+        ),
+      },
+      {
+        name: "content~liv9uwoof2c",
+        className: "title-content content4-title-content liv9u46wll-editor_css",
+        children: (
+          <span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://storapi.ente-ltd.ru/cdn/videos/Article_2016.pdf"
+            >
+              Оценка технического состояния технологических трубопроводов с
+              применением роботизированных сканеров | Научно-технический сборник
+              | ВЕСТИ ГАЗОВОЙ НАУКИ | 2016г.
+            </a>
+          </span>
+        ),
+      },
+      {
+        name: "content",
+        className: "title-content content4-title-content liv9u46wll-editor_css",
+        children: (
+          <span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docs.google.com/viewer?url=https://storapi.ente-ltd.ru/cdn/videos/Article_2015_.pdf"
+            >
+              Внутритрубный контроль технологических трубопроводов компрессорных
+              станций ОАО «Газпром» с применением роботизированных сканеров |
+              Газовая промышленность | 2015г.
+            </a>
           </span>
         ),
       },
@@ -921,16 +1206,16 @@ export const Content40DataSource = {
   },
 };
 export const Feature10DataSource = {
-  // Диплом
+  // ДИПЛОМ
   wrapper: { className: "home-page-wrapper content1-wrapper" },
   OverPack: { className: "home-page content1", playScale: 0.3 },
   imgWrapper: { className: "content1-img", md: 10, xs: 24 },
   img: {
-    children: Diplom,
+    children: [DiplomS, DiplomM, DiplomV],
   },
   textWrapper: {
     className: "content1-text liva1ns828-editor_css",
-    md: 14,
+    md: 12,
     xs: 24,
   },
   title: {
@@ -952,7 +1237,8 @@ export const Feature10DataSource = {
     ),
   },
 };
-export const Teams10DataSource = {
+export const TechnologiesDataSource = {
+  // ТЕХНОЛОГИИ
   // Технологии
   wrapper: { className: "home-page-wrapper teams1-wrapper" },
   page: { className: "home-page teams1" },
@@ -986,7 +1272,7 @@ export const Teams10DataSource = {
             {
               name: "image",
               // className: "teams1-image",
-              children: <img src={Chemodan} alt="img" />,
+              children: <img src={Robot} alt="img" />,
             },
             {
               name: "content1",
@@ -1004,30 +1290,6 @@ export const Teams10DataSource = {
         },
       },
       {
-        name: "block1",
-        className: "block",
-        md: 8,
-        xs: 24,
-        titleWrapper: {
-          children: [
-            {
-              name: "image",
-              // className: "teams1-image",
-              children: <img src={Employee} alt="img" />,
-            },
-            {
-              name: "content1",
-              className: "teams1-content liva8hwjzz-editor_css",
-              children: (
-                <span>
-                  <p>Специализированные передвижные автолаборатории</p>
-                </span>
-              ),
-            },
-          ],
-        },
-      },
-      {
         name: "block2",
         className: "block",
         md: 8,
@@ -1037,7 +1299,7 @@ export const Teams10DataSource = {
             {
               name: "image",
               // className: "teams1-image",
-              children: <img src={Robot} alt="img" />,
+              children: <img src={Chemodan} alt="img" />,
             },
             {
               name: "content1",
@@ -1054,11 +1316,39 @@ export const Teams10DataSource = {
           ],
         },
       },
+      {
+        name: "block1",
+        className: "block",
+        md: 8,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: "image",
+              // className: "teams1-image",
+              children: <img src={Cars} alt="img" />,
+            },
+            {
+              name: "content1",
+              className: "teams1-content liva8hwjzz-editor_css",
+              children: (
+                <div>
+                  <span >
+                    <p>
+                      Специализированные передвижные автолаборатории
+                      </p>
+                  </span>
+                </div>
+              ),
+            },
+          ],
+        },
+      },
     ],
   },
 };
 export const Content41DataSource = {
-  // Наше оборудование
+  // НАШЕ ОБОРУДОВАНИЕ
   wrapper: { className: "home-page-wrapper content4-wrapper" },
   page: { className: "home-page content4" },
   OverPack: { playScale: 0.3, className: "" },
@@ -1091,6 +1381,7 @@ export const Content41DataSource = {
   },
 };
 export const Feature60DataSource = {
+  // ЭКОЛОГИЯ
   // Экология
   wrapper: { className: "home-page-wrapper feature6-wrapper" },
   OverPack: { className: "home-page feature6", playScale: 0.3 },

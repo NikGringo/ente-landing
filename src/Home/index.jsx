@@ -6,11 +6,13 @@ import { enquireScreen } from "enquire-js";
 import Nav0 from "./Nav0";
 import Banner2 from "./Banner2";
 import Content0 from "./Content0";
+import Content01 from "./Content01";
 import Content5 from "./Content5";
 import Content12 from "./Content12";
 import Content4 from "./Content4";
+import Content41 from "./Content41";
 import Feature1 from "./Feature1";
-import Teams1 from "./Teams1";
+import Technologies from "./Technologies";
 import Feature6 from "./Feature6";
 import Footer1 from "./Footer1";
 
@@ -18,11 +20,12 @@ import {
   Nav00DataSource,
   Banner20DataSource,
   Content00DataSource,
+  Content01DataSource,
   Content50DataSource,
   Content120DataSource,
   Content40DataSource,
   Feature10DataSource,
-  Teams10DataSource,
+  TechnologiesDataSource,
   Content41DataSource,
   Feature60DataSource,
   Footer10DataSource,
@@ -76,6 +79,12 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
+      // <Feature1
+      //   id="Feature1_0"
+      //   key="Feature1_0"
+      //   dataSource={Feature10DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
       <Nav0
         id="Nav0_0"
         key="Nav0_0"
@@ -106,25 +115,25 @@ export default class Home extends React.Component {
         dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
+      <Content01
+        id="Content0_01"
+        key="Content0_01"
+        dataSource={Content01DataSource}
+        isMobile={this.state.isMobile}
+      />,
       <Content4
         id="Content4_0"
         key="Content4_0"
         dataSource={Content40DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Feature1
-        id="Feature1_0"
-        key="Feature1_0"
-        dataSource={Feature10DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Teams1
+      <Technologies
         id="Teams1_0"
         key="Teams1_0"
-        dataSource={Teams10DataSource}
+        dataSource={TechnologiesDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content4
+      <Content41
         id="Content4_1"
         key="Content4_1"
         dataSource={Content41DataSource}

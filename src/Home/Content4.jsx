@@ -1,8 +1,8 @@
-import React from 'react';
-import TweenOne from 'rc-tween-one';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import VideoPlay from 'react-sublime-video';
-import { getChildrenToRender } from './utils';
+import React from "react";
+import TweenOne from "rc-tween-one";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import VideoPlay from "react-sublime-video";
+import { getChildrenToRender } from "./utils";
 
 function Content4(props) {
   const { ...tagProps } = props;
@@ -10,13 +10,13 @@ function Content4(props) {
   delete tagProps.dataSource;
   delete tagProps.isMobile;
   const animation = {
-    y: '+=30',
+    y: "+=30",
     opacity: 0,
-    type: 'from',
-    ease: 'easeOutQuad',
+    type: "from",
+    ease: "easeOutQuad",
   };
   const videoChildren = dataSource.video.children.video;
-  const videoNameArray = videoChildren.split('.');
+  const videoNameArray = videoChildren.split(".");
   const type = videoNameArray[videoNameArray.length - 1];
   return (
     <div {...tagProps} {...dataSource.wrapper}>
